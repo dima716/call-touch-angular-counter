@@ -120,7 +120,44 @@
                     }
                 }
             }
+        },
+        "angular-calltouch-counter": {
+            "projectType": "library",
+            "root": "projects/angular-calltouch-counter",
+            "sourceRoot": "projects/angular-calltouch-counter/src",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-ng-packagr:build",
+                    "options": {
+                        "tsConfig": "projects/angular-calltouch-counter/tsconfig.lib.json",
+                        "project": "projects/angular-calltouch-counter/ng-package.json"
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "projects/angular-calltouch-counter/src/test.ts",
+                        "tsConfig": "projects/angular-calltouch-counter/tsconfig.spec.json",
+                        "karmaConfig": "projects/angular-calltouch-counter/karma.conf.js",
+                        "codeCoverage": true,
+                        "browsers": "ChromeHeadless"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "projects/angular-calltouch-counter/tsconfig.lib.json",
+                            "projects/angular-calltouch-counter/tsconfig.spec.json"
+                        ],
+                        "exclude": ["**/node_modules/**"]
+                    }
+                }
+            }
         }
     },
-    "defaultProject": "demo"
+    "defaultProject": "demo",
+    "cli": {
+        "analytics": false
+    }
 }

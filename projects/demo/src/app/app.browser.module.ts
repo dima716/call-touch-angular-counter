@@ -1,6 +1,7 @@
 import {LocationStrategy, PathLocationStrategy} from '@angular/common';
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import {AngularCallTouchCounterModule} from 'angular-calltouch-counter';
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app.routes';
 import {StaticModule} from './modules/static/static.module';
@@ -13,6 +14,10 @@ import {StaticModule} from './modules/static/static.module';
         }),
         AppRoutingModule,
         StaticModule,
+        AngularCallTouchCounterModule.forRoot({
+            enabled: true,
+            counterId: 'adffad23',
+        }),
     ],
     declarations: [AppComponent],
     providers: [
