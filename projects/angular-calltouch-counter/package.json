@@ -1,6 +1,6 @@
 {
     "name": "angular-calltouch-counter",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "peerDependencies": {
         "@angular/core": ">=9.0.0"
     },

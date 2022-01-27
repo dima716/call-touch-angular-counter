@@ -1,6 +1,6 @@
 {
     "name": "@tinkoff/angular-open-source-starter",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
@@ -95,6 +95,7 @@
         "standard-version": "^9.0.0",
         "stylelint": "^10.0.1",
         "ts-node": "^9.1.1",
+        "tsickle": "^0.43.0",
         "tslint": "~5.15.0",
         "tsutils": "^3.17.1",
         "typescript": "~3.8.3"
